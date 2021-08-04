@@ -15,7 +15,7 @@ app.use(express.static('public'));
 
 // your first API endpoint... 
 app.get("/api/whoami", function (req, res) {
-  res.json({ipadress:req.headers['x-forwarded-for'] || req.socket.remoteAddress,language:req.headers['accept-language'],software: req.headers['user-agent']});
+  res.json({ipaddress:req.headers['x-forwarded-for'] || req.socket.remoteAddress,language:req.headers['accept-language'],software: req.headers['user-agent']});
 });
 
 
